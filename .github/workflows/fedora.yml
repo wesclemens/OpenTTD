@@ -317,7 +317,7 @@ jobs:
           fontconfig-devel \
           libicu \
           libicu-devel \
-    │     SDL2-devel \
+          SDL2-devel \
           fluidsynth-devel \
           rpmbuild-order \
           rpm-build \
