@@ -323,8 +323,6 @@ jobs:
           rpm-build \
           # EOF
         echo "::endgroup::"
-      env:
-        DEBIAN_FRONTEND: noninteractive
 
     - name: Install GCC problem matcher
       uses: ammaraskar/gcc-problem-matcher@master
