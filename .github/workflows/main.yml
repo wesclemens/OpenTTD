@@ -238,7 +238,7 @@ jobs:
     name: Linux (Distros:RPM)
     needs: source
 
-    if: needs.source.outputs.is_tag == 'true'
+    #if: needs.source.outputs.is_tag == 'true'
 
     strategy:
       fail-fast: false
