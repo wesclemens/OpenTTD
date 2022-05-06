@@ -267,7 +267,7 @@ jobs:
     - name: Install dependencies
       run: |
         echo "::group::Update dnf"
-        dnf update
+        dnf check-update
         echo "::endgroup::"
         echo "::group::Install dependencies"
         dnf install --nodocs --assumeyes \
