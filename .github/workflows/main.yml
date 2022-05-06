@@ -266,8 +266,8 @@ jobs:
         tar -xf source.tar.gz --strip-components=1
     - name: Install dependencies
       run: |
-        echo "::group::Update apt"
-        apt-get update
+        echo "::group::Update dnf"
+        microdnf update
         echo "::endgroup::"
         echo "::group::Install dependencies"
         microdnf install --nodocs --assumeyes \
