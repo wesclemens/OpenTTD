@@ -267,10 +267,10 @@ jobs:
     - name: Install dependencies
       run: |
         echo "::group::Update dnf"
-        microdnf update
+        dnf update
         echo "::endgroup::"
         echo "::group::Install dependencies"
-        microdnf install --nodocs --assumeyes \
+        dnf install --nodocs --assumeyes \
           cmake \
           make \
           automake \
