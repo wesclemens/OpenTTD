@@ -266,9 +266,9 @@ jobs:
         tar -xf source.tar.gz --strip-components=1
     - name: Install dependencies
       run: |
-        echo "::group::Update dnf"
-        dnf check-update
-        echo "::endgroup::"
+        #echo "::group::Update dnf"
+        #dnf check-update
+        #echo "::endgroup::"
         echo "::group::Install dependencies"
         dnf install --nodocs --assumeyes \
           cmake \
