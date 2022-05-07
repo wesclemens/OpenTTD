@@ -187,7 +187,7 @@ elseif(UNIX)
                 set(PLATFORM ${CMAKE_MATCH_1})
                 
                 set(CPACK_GENERATOR "RPM")
-                if("$ARCHITECTURE" STREQUAL "amd64"
+                if("$ARCHITECTURE" STREQUAL "amd64")
                   set(CPACK_RPM_PACKAGE_ARCHITECTURE "x86_64")
                 endif()
             else()
