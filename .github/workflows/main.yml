@@ -7,7 +7,7 @@ on:
         description: 'Ref to build (for Pull Requests, use refs/pull/NNN/head)'
         required: true
   repository_dispatch:
-    # client_payload should be the same as the inputs for workflow_dispatch.
+    # client_payload should be the same as the inputs for workflow_dispatch./
     types:
     - Build*
   release:
@@ -301,9 +301,7 @@ jobs:
         echo "::group::CMake"
         cmake ${GITHUB_WORKSPACE} \
           -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-          -DCMAKE_INSTALL_BINDIR=bin \
           -DCMAKE_INSTALL_PREFIX=/usr \
-          -DCMAKE_INSTALL_DATADIR=share \
           # EOF
         echo "::endgroup::"
         echo "::group::Build"
